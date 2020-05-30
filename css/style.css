@@ -1,0 +1,1043 @@
+@import url('https://fonts.googleapis.com/css?family=Philosopher:700,700i&display=swap&subset=cyrillic');
+@font-face {
+    font-family: 'GothicR';
+    src: url('../font/CenturyGothic/CenturyGothic.eot');
+    src: local('Century Gothic'), local('CenturyGothic'),
+        url('../font/CenturyGothic/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+        url('../font/CenturyGothic/CenturyGothic.woff2') format('woff2'),
+        url('../font/CenturyGothic/CenturyGothic.woff') format('woff'),
+        url('../font/CenturyGothic/CenturyGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothicB';
+    src: url('../font/CenturyGothic/CenturyGothic-Bold.eot');
+    src: local('Century Gothic Bold'), local('CenturyGothic-Bold'),
+        url('../font/CenturyGothic/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/CenturyGothic/CenturyGothic-Bold.woff2') format('woff2'),
+        url('../font/CenturyGothic/CenturyGothic-Bold.woff') format('woff'),
+        url('../font/CenturyGothic/CenturyGothic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothicI';
+    src: url('../font/CenturyGothic/CenturyGothic-Italic.eot');
+    src: local('Century Gothic Italic'), local('CenturyGothic-Italic'),
+        url('../font/CenturyGothic/CenturyGothic-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../font/CenturyGothic/CenturyGothic-Italic.woff2') format('woff2'),
+        url('../font/CenturyGothic/CenturyGothic-Italic.woff') format('woff'),
+        url('../font/CenturyGothic/CenturyGothic-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'tinos';
+    src: url('../font/tinos/tinos-bolditalic-webfont.eot');
+    src: url('../font/tinos/tinos-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/tinos/tinos-bolditalic-webfont.woff2') format('woff2'),
+         url('../font/tinos/tinos-bolditalic-webfont.woff') format('woff'),
+         url('../font/tinos/tinos-bolditalic-webfont.svg#tinosbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*header*/
+        .navbar-header{
+            float: right;
+        }
+        .my-navbar,.head,.entrance,.registration{
+            background-color:#f5f2f8;
+            border: none;
+        }
+        .navbar{
+            margin-bottom: 0;
+        }
+        .menuButton{
+            float: left;
+        }
+        .navbar-default .navbar-nav>li>a{
+            color: #5b5da8;
+            font-family: "GothicR";
+        }
+        .button-in-menu{
+            padding-top: 20px;
+            padding-bottom:20px;
+            font-size: 12px;
+            color: #5b5da8;
+            font-family: "GothicR";
+            text-align: right;
+
+        }
+        .my-collapse{
+            float: left;
+        }
+        .entrance{
+            padding-left: 20px;
+            position: relative;
+            margin-left: 15px;
+        }
+        .entrance:before{
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 16px;
+            top: 0;
+            left:0;
+            background: url('../images/sprites.png');
+            background-position: -1px 0;
+        }
+        .registration{
+            padding-left: 25px;
+            position: relative;
+        }
+        .registration:before{
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 17px;
+            top: 0;
+            left: 0;
+            background: url('../images/sprites.png');
+            background-position: 0 -18px ;
+        }
+
+        @media screen and (max-width:992px){
+        .button-in-menu{
+            padding-top: 10px;
+            padding-bottom:10px;
+            text-align: right; 
+        }
+        }
+/*logo*/
+        .logo-bottom{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .button-at-logo{
+            float: right;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: right;
+        }
+        .button-at-logo>button{
+            font-family: "GothicR";
+            color: #5b5da8;
+            font-size: 12px;
+            border:none;
+            background: #ffffff;
+
+        }
+        .bookmarks{
+            padding: 10px 0 10px 42px;
+            position: relative;
+        }
+        .logo{
+            min-width: 229px;
+            padding-left:0;
+            padding-right:0;
+        }
+        .basket{
+            padding: 10px 0 10px 42px;
+            margin-left: 20px;
+            position: relative;
+
+        }
+        .bookmarks:before{
+            content: "";
+            position: absolute;
+            width: 37px;
+            height: 33px;
+            top: 0;
+            left: 0;
+            background: url('../images/sprites.png');
+            background-position: -65px -100px ;
+        }
+        .basket:before{
+            content: "";
+            position: absolute;
+            width: 35px;
+            height: 33px;
+            top: 0;
+            left: 0;
+            background: url('../images/sprites.png');
+            background-position: -49px 0;
+        }
+        .basket:after{
+            content: "0";
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            border-radius:50%;
+            bottom: -4px;
+            left: -6px;
+            background-color: #ff5fb6;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #ffffff;
+            font-family: "GothicR";
+
+        }
+/*search*/
+        .search-icon{
+            background:#ff5fb6;
+            color: white;
+            border-radius: 10px;
+        }
+        .search{
+            border: 1px solid #5b5da8;
+            border-radius: 10px;
+            outline: none;
+        }
+        .form-control:focus {
+            border-color: #5b5da8; 
+            outline: none; 
+            -webkit-box-shadow: inset 0 0 0 transparent, 0 0 0 transparent;
+            box-shadow: inset 0 0 0 transparent, 0 0 0 transparent);
+        }
+        .search {
+            border: 1px solid #5b5da8;
+            border-radius: 10px;
+            outline: none;
+        }
+        .contacts>div>a>p{
+            color: #ff5fb6;
+            font-family: 'GothicB';
+            font-size: 14px;
+            text-transform: uppercase;
+            text-align: right;
+            margin-bottom: 0;
+            
+        }
+        .contacts{
+            float: right;
+        }
+/*catalog*/
+        .for-img{
+            position: relative;
+            background: url(../images/slider1.png) no-repeat;
+            background-size: cover;
+            width: 100%;
+            min-height: 529px;
+            margin-bottom: 92px;
+            margin-top: 15px;
+        }
+        .style-catalog{
+            top: 0;
+        }
+
+             @media screen and (max-width:992px){
+        .for-img{
+            background: white;
+            min-height: 0;
+            margin-bottom: 0;
+        }
+        }
+        .mainText{
+            position: relative;
+            z-index: 3;
+            width: 371px;
+            height: 254px;
+            border: 14px solid rgba(0,0,0,0.4);
+            text-align: right;
+            padding-top: 20px;
+            padding-right: 15px;
+            border-image: linear-gradient(-221deg, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+            border-image-slice: 1;
+            float: right;
+            margin-top: 145px;
+        }
+        .mainText>h1{
+            color: #fffeff;
+            font-family: "GothicR";
+            font-size: 42px;
+            text-transform: uppercase;
+        }
+        .background-main-text{
+            width: 100%;
+            height:529px;
+            top:0;
+            right: 0;
+            position: absolute;
+            float: right;
+            overflow: hidden;
+        }
+        .background-main-text:after{
+            content: "";
+            position: absolute;
+            top:-250px;
+            right: -630px;
+            width: 1000px;
+            height: 1000px;
+            background-color: #b992d9;
+            opacity: 0.5;
+            border:1px solid transparent;
+            border-radius: 50%;
+            z-index: 2;
+
+        }
+         @media screen and (max-width:992px){
+        .for-img:after,.for-img:before{
+           display: none;
+        }
+        }
+        .catalog{
+           
+            color: #5b5da8;
+            font-family: 'GothicB';
+            font-size: 18px;
+            text-transform: uppercase;
+
+        }
+        .my-catalog{
+            padding-right: 30px;
+            color: #5b5da8;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-family: 'GothicB';
+            padding-bottom: 18px;
+            transform: translateY(-55px);
+            padding-left: 0;
+
+         }
+        .my-catalog:after{
+            content: "";
+            position: absolute;
+            bottom:28px;
+            right: 0;
+            color: #5b5da8;
+            font-family: 'GothicB';
+            font-size: 18px;
+            text-transform: uppercase;
+            width: 10px;
+            height: 10px;
+            border-bottom: 1px solid #787ab7;
+            border-left: 1px solid #787ab7;
+            transform: rotate(-45deg);
+        }
+        .style-catalog{
+            background-color: #ffffff;
+            opacity: 0.9;
+            padding: 22px 12px 0 12px;
+            color: #5b5da8;
+            font-family: "GothicR";
+            font-size: 16px;
+            line-height: 18px;
+            text-transform: none;
+            margin-top: 0;
+        }
+        @media screen and (max-width:992px){
+        .style-catalog,.catalog{
+            text-align: center;
+            margin-top:20px;  
+        }
+        }
+         @media screen and (max-width:992px){
+        .my-catalog {
+            transform: translateY(-20px);
+
+        }
+        }
+        @media screen and (max-width:992px){
+        .catalog {
+            position: relative;         
+        }
+        }
+        @media screen and (min-width:992px){
+        .style-catalog {
+            bottom: 0;
+            left: 85px;        
+        }
+        }
+/*second*/
+        .advantages{
+        color: #5b5da8;
+        font-family: "GothicR";
+        font-size: 14px;
+        text-transform: uppercase;
+
+        }
+       .advantages>div>div>div{
+        text-align: right;
+        min-height: 220px;
+        border: 14px solid rgba(192, 193, 197, 0.13);
+        padding: 20px;
+        position: relative;
+        margin-bottom: 80px;
+       }
+       .advantages>div>div>div>h2{
+        text-align: right;
+        color: #5b5da8;
+        font-family: "GothicR";
+        font-size: 24px;
+        text-transform: uppercase;
+        padding:6px 0;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 20px;
+       }
+       .advantages>div>div>div>h2:before{
+        content:"";
+        width:100%;
+        height:6px;
+        left:0;
+        bottom:0;
+        position:absolute;
+        z-index:9;
+        background: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+        }
+        .advantages>div>div>div>p{
+            max-height: 60px;
+            overflow:hidden;
+            font-family: "GothicR";
+            font-size: 14px;
+            text-transform: none;
+            color: #868686;
+            text-align: justify;
+         }
+        .quality:after{
+            content: "";
+            position: absolute;
+            top:-26px;
+            left:17px;
+            width: 62px;
+            height: 62px;
+            background-image: url(../images/sprites.png);
+            background-position: -200px 0;
+            z-index: -1;
+        }
+        .service:after{
+            content: "";
+            position: absolute;
+            top:-26px;
+            left:17px;
+            width: 36px;
+            height: 56px;;
+            background-image: url(../images/sprites.png);
+            background-position: -102px -61px ;
+        }
+        .success:after{
+            content: "";
+            position: absolute;
+            top:-29px;
+            left:17px;
+            width: 62px;
+            height: 60px;
+            background-image: url(../images/sprites.png);
+            background-position: -86px 0;
+            z-index: -1;
+        }
+        @media screen and (max-width:768px){
+        .advantages>div>div>div{
+            margin-top: 20px;
+            margin-bottom: 0px;
+            }
+        }
+/*stocks*/
+        .left-img{
+            position: relative;
+            min-width: 100%
+        }
+        .right-img{
+            position: relative;
+            min-width: 100%
+        }
+        .text-in-left-img{
+            position: absolute;
+            top:50%;
+            margin-top: -54.5px;
+            left:15px;
+            width: 205px;
+            background-color: #c5b3d8;  
+            color: #ffffff;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-transform: uppercase;
+        }
+        .text-in-left-img>h3{
+            font-family: "GothicB";
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            margin-top: 25px;
+        }
+        .text-in-left-img>p{
+            font-family: "GothicR";
+            font-size: 12px;
+            margin-bottom: 15px;
+
+        }
+        .top-text-in-right-img{
+            position: absolute;
+            top:53px;
+            right: 15px;
+            background-color: #ffffff;
+            opacity: 0.7;
+            color: #707070;
+            width: 260px;
+            text-align: right;
+            padding-right: 5px;
+            text-transform: uppercase;
+
+        }
+        .top-text-in-right-img>h3{
+            font-family: "GothicR";
+            font-size: 24px;
+            margin-bottom: 5px;
+         }
+        .top-text-in-right-img>h3>span{
+            font-family: "GothicB";
+            font-size: 72px;
+        }
+        .bottom-text-in-right-img{
+            position: absolute;
+            top:183px;
+            right: 15px;
+            background-color: #ffffff;
+            opacity: 0.7;
+            color: #707070;
+            width: 166px;
+            text-align: right;
+            padding-right: 5px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .bottom-text-in-right-img>h3{
+            font-family: "GothicR";
+            font-size: 24px;
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+        .bottom-text-in-right-img>h3>span{
+            font-family: "GothicB";
+            font-size: 24px;
+        }
+
+        @media screen and (max-width:768px){
+        .left-img,.right-img{
+            margin-top:15px;
+            margin-bottom: 15px;
+            }
+        }
+            @media screen and (max-width:992px){
+       .right-img{
+            margin-top: 15px;
+            }
+        }
+/*
+hits*/
+        .hit{
+            text-align: center;
+            margin-top: 25px;
+        }
+        @media screen and (min-width:992px){
+       .hit-header{
+            margin-top: 120px;
+            }
+        }
+        .hit-header>h2{
+            color: #5b5da8;
+            font-family: "Century Gothic";
+            font-size: 36px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        .new-header>h2{
+            color: #5b5da8;
+            font-family: "Century Gothic";
+            font-size: 36px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        .hit-shops{
+            position: relative;
+        }
+        .hit-shops>h2{
+            position: relative;
+        }
+         .hit-shops:before{
+            position: absolute;
+            content:"";
+            width:100%;
+            height:6px;
+            left:0;
+            bottom:-10px;
+            background-image: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+        } 
+        .hit-shops:after{
+            position: absolute;
+            content:"";
+            width: 66px;
+            height: 60px;
+            top:-20px;
+            right: 100px;
+            background-image: url(../images/sprites.png);
+            background-position: -1px -209px ;
+        } 
+        .icon_in_hits{
+            border: 14px solid rgba(205,205,205,0.1);
+            position: relative;
+            margin-bottom: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            min-height: 430px;
+       }
+       .owl-item>img{
+            display: block;
+            width: auto;
+
+       }
+        .icon_in_hits>h3{
+            color: #5b5da8;
+            font-family: "GothicB";
+            font-size: 14px;
+        }
+        .hits{
+            margin-bottom: 10px;
+            margin-top: 52px;
+            
+        }
+        .icon_in_hits>p{
+            position: relative;
+            margin-bottom: 55px;
+        }
+        .owl-carousel .owl-item img {
+            width: auto; 
+            display: inline;
+            min-height: 163px;
+            }
+        .icon_in_hits>p:before{
+            position: absolute;
+            content: "";
+            bottom:-19px;
+            left: 35%; 
+            width: 90px;
+            height: 19px;
+            background:url(../images/star.png); 
+        }
+        .icon_in_hits>h4{
+            color: #ff5fb6;
+            font-family: "GothicR";
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        .icon_in_hits>h4>s{
+            color: #5b5da8;
+            font-family: "GothicR";
+            font-size: 14px;
+        }
+        .icon_in_hits>h4>span{
+            color: #ff5fb6;
+            font-family: "GothicR";
+            font-size: 16px;
+        }
+        label{
+            color: #5b5da8;
+            font-family: "GothicR";
+            font-size: 14px;
+            float: left;
+        }
+        .numberShops{
+            width: 30px;
+            height: 30px;
+            border:1px solid #5b5da8;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: -30px;
+            margin-top: -10px;
+        }
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+            margin: 0;
+            float: left;
+        }
+        .both{
+            float: right;
+            width: 79px;
+            height: 30px;
+            border: 1px solid #ff5fb6;
+            background-color: #ff5fb6;
+        }
+        
+         @media screen and (min-width:992px){
+       .icon_in_hits>p:before{
+            right:5px;
+            }
+        }
+        @media screen and (min-width:992px){
+       .icon_in_hits{
+            padding-left: 20px;
+            padding-right: 20px;
+            }
+        }
+
+        @media screen and (min-width:992px){
+       .hits{
+            margin-bottom:80px;
+            }
+        }
+/*new*/
+        .new-shops{
+            position: relative;
+
+        }
+         .new-shops:before{
+            position: absolute;
+            content:"";
+            width:100%;
+            height:6px;
+            left:0;
+            bottom:-10px;
+            background-image: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+        } 
+        .new-shops:after{
+            position: absolute;
+            content:"";
+            width: 62px;
+            height: 61px;
+            top:-20px;
+            right: 60px;
+            background-image: url(../images/sprites.png);
+            background-position: -1px -101px ;
+            z-index: -1;
+        } 
+/*reviews*/
+        .reviews{
+            background: #c5b3d8;
+            padding-top: 80px;
+        }
+        
+        .reviews>.reviesHeader>h3>span{
+            color: #ffffff;
+            font-family: "Century Gothic";
+            font-size: 36px;
+            font-weight: 400;
+            text-transform: uppercase;
+            position: relative;
+        }
+        .reviews>.reviesHeader>h3>span:after{
+            content:"";
+            width:100%;
+            height:6px;
+            left:0;
+            bottom:-10px;
+            position:absolute;
+            z-index:9;
+            background: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+         }
+        .all-reviews{
+            color: #ffffff;
+            font-size: 14px;
+            font-family: 'GothicI';
+            padding-top: 46px;
+        }
+        .nameReviews{
+            font-family: 'GothicB';
+            color: #ffffff;
+            font-size: 14px;
+            margin-top: 45px;
+        }
+        .caruselReviews>.owl-nav>.owl-prev{
+            margin-right: 16px;
+           
+        }
+        .caruselReviews>.owl-nav>.owl-next{
+            margin-left: 16px;
+            transform: rotate(180deg);
+           
+        }
+        .caruselReviews>.owl-nav{
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 40px;
+
+        }
+        .textReviews{
+            position: relative;
+        }
+        .textReviews:before{
+            position: absolute;
+            content:"";
+            width: 165px;
+            height: 121px;
+            border: 14px solid #ffffff;
+            opacity: 0.13;
+            top: 33px;
+            left: 25%;
+        }
+        .aboutCompany{
+            position: relative;
+        }
+        .salt{
+            position: absolute;
+            top:229px;
+            left: 0;
+        }
+        .vace{
+            position: absolute;
+            top:60px;
+            right: 0;
+
+        }
+        .aboutCompany{
+            margin-top: 10px;
+            margin-bottom:10PX;
+        }
+        @media screen and (min-width:992px){
+        .aboutCompany{
+            margin-top: 90px;
+            margin-bottom: 130px;
+        }
+    }
+        .CompanyHeader>h3{
+            margin-bottom: 67px;
+        }
+        .CompanyHeader>h3>span{
+            color: #5b5da8;
+            font-family: "Century GothiR";
+            font-size: 36px;
+            font-weight: 400;
+            text-transform: uppercase;
+            position: relative;
+        }
+        .CompanyHeader>h3>span:after{
+            content:"";
+            width:100%;
+            height:6px;
+            left:0;
+            bottom:-10px;
+            position:absolute;
+            background: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+        }
+        .CompanyHeader>h3>span:before{
+            content:"";
+            position:absolute;
+            background: url(../images/sprites.png);
+            background-position: 0 -163px ;
+            width: 58px;
+            height: 42px;
+            top:-10px;
+            left:40%;
+            z-index: -1;
+        }
+        .companyText>p{
+            color: #707070;
+            font-family: "GothicR";
+            font-size: 14px;
+        }
+        .Companylist>.owl-nav>.owl-prev i, .Companylist>.owl-nav>.owl-next i {
+            color: white;
+        }
+        .Companylist>.owl-nav{
+            text-align: center;
+        }
+        .Companylist>.owl-nav>.owl-prev {
+            margin-right: 16px;
+        }
+        .Companylist>.owl-nav>.owl-next {
+            margin-left: 16px;
+            transform: rotate(180deg);
+        }
+         @media screen and (min-width:992px){
+        .Companylist>.owl-nav>.owl-prev {
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            left: 10%;
+            }
+        }
+         @media screen and (min-width:992px){
+        .Companylist>.owl-nav>.owl-next {
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            right: 10%;
+            transform: rotate(180deg); 
+        }
+    }
+/*footer*/
+        .footer{
+            background: #765598;
+            padding-bottom: 70px;
+
+        }
+        .elements_in_footer{
+            color: #ffffff;
+            font-family: "GothicR";
+            font-size: 20px;
+            margin-bottom: 34px;
+        }
+        .catalogFooter>div>h3>span,.shops>div>h3>span,.contactsFooter>div>h3>span,.soc-sety>div>h3>span{
+            position: relative;
+            color: #ffffff;
+            font-family: "GothicB";
+            font-size: 24px;
+            text-transform: uppercase;
+
+        }
+        @media screen and (min-width:992px){
+        .elements_in_footer{
+            font-size: 14px;
+            }
+        }
+        @media screen and (min-width:992px){
+        .catalogFooter>div>h3>span,.shops>div>h3>span,.contactsFooter>div>h3>span,.soc-sety>div>h3>span {
+            font-size: 18px;
+            }
+        }
+        
+        .catalogFooter>div>h3>span:before,.shops>div>h3>span:before,.contactsFooter>div>h3>span:before,.soc-sety>div>h3>span:before{
+            position: absolute;
+            content: "";
+            width:100%;
+            height:5px;
+            left:0;
+            bottom:-10px;
+            position:absolute;
+            background: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+
+        }
+        .catalogFooter>div>h3,.shops>div>h3,.contactsFooter>div>h3,.soc-sety>div>h3{
+            margin-bottom: 34px;
+            margin-top: 60px;
+        }
+        .icons_catalog{
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .icons_catalog>li>a{
+            color: #ffffff;
+            line-height: 2;
+        }
+        .buyers{
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .buyers>li>a{
+            color: #ffffff;
+            line-height: 2;
+        }
+        .contactsFooter>p{
+            margin-left: 58px;
+        }
+        .address{
+            position: relative;
+        }
+        .address:before{
+            content: '';
+            position: absolute;
+            width: 21px;
+            height: 31px;
+            background: url(../images/sprites1.png);
+            background-position: -1px -26px ;
+            top: -8px;
+            left: -56px;
+        }
+        .e-mail{
+            position: relative;
+        }
+        .e-mail:before{
+            content: '';
+            position: absolute;
+            width: 27px;
+            height: 25px;
+            background: url(../images/sprites1.png);
+            background-position: -1px 0;
+            top: 0;
+            left: -58px;
+        }
+        .phone{
+            position: relative;
+        }
+        .phone:before{
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 32px;
+            background: url(../images/sprites1.png);
+            background-position: 0 -89px ;
+            top: 15px;
+            left: -55px;
+        }
+        .time{
+            position: relative;
+        }
+        .time:before{
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url(../images/sprites1.png);
+            background-position: -1px -58px ;
+            top: 15px;
+            left: -55px;
+        }
+        .soc-sety-icons{
+            list-style-type: none;
+            padding-left: 0;
+
+        }
+        .soc-sety-icons>li{
+            width: 41px;
+            height: 41px;
+            position: relative;
+            margin-right:10px ;
+            display: inline-block;
+        }
+        .soc-sety-icons>li:last-child{
+            margin-right: 0;
+
+        }
+        .vk{
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            top: 0;
+            left: 0;
+            background: url(../images/sprites.png);
+            background-position: -109px -119px ;
+        }
+        .insta{
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            top: 0;
+            left: 0;
+            background: url(../images/sprites.png);
+            background-position: -64px -136px ;
+        }
+        .fb{
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            top: 0;
+            left: 0;
+            background: url(../images/sprites.png);
+            background-position: 0 -58px ;
+        }
+        .gog{
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            top: 0;
+            left: 0;
+            background: url(../images/sprites.png);
+            background-position: -44px -58px ;
+
+        }
+        .writer{
+            color: #765598;
+            font-family: "GothicR";
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+
+
+
+
+
+
+           

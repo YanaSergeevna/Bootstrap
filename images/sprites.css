@@ -1,0 +1,28 @@
+.smartphone, .alarm-clock-(1), .map-pointer, .email{
+	background: url(sprites.png) no-repeat;
+}
+
+.smartphone{
+	background-position: 0 -89px ;
+	width: 30px;
+	height: 32px;
+}
+
+.alarm-clock-(1){
+	background-position: -1px -58px ;
+	width: 30px;
+	height: 30px;
+}
+
+.map-pointer{
+	background-position: -1px -26px ;
+	width: 21px;
+	height: 31px;
+}
+
+.email{
+	background-position: -1px 0;
+	width: 27px;
+	height: 25px;
+}
+
