@@ -20,7 +20,7 @@
 		    loop:true,
 		    margin:10,
 		    nav:true,
-		    navText: ["<img src='images/arrow.png'>", "<img src='images/arrow.png'>"],
+		    navText: [],
 		    responsive:{
 		        0:{
 		            items:1
@@ -37,7 +37,7 @@
 		    loop:true,
 		    margin:10,
 		    nav:true,
-		    navText: ["<img src='images/arrow.png'>", "<img src='images/arrow.png'>"],
+		    navText: [],
 		    responsive:{
 		        0:{
 		            items:1

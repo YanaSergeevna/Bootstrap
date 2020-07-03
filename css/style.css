@@ -78,6 +78,9 @@
             position: relative;
             margin-left: 15px;
         }
+        .entrance:hover{
+            color: #333;
+        }
         .entrance:before{
             content: "";
             position: absolute;
@@ -91,6 +94,9 @@
         .registration{
             padding-left: 25px;
             position: relative;
+        }
+        .registration:hover{
+            color: #333;
         }
         .registration:before{
             content: "";
@@ -127,7 +133,12 @@
             font-size: 12px;
             border:none;
             background: #ffffff;
-
+        }
+        .button-at-logo>button:hover{
+            color: #333;
+        }
+        button:active, button:focus {
+            outline: none;
         }
         .bookmarks{
             padding: 10px 0 10px 42px;
@@ -352,39 +363,41 @@
         }
 /*second*/
         .advantages{
-        color: #5b5da8;
-        font-family: "GothicR";
-        font-size: 14px;
-        text-transform: uppercase;
+            color: #5b5da8;
+            font-family: "GothicR";
+            font-size: 14px;
+            text-transform: uppercase;
 
         }
        .advantages>div>div>div{
-        text-align: right;
-        min-height: 220px;
-        border: 14px solid rgba(192, 193, 197, 0.13);
-        padding: 20px;
-        position: relative;
-        margin-bottom: 80px;
+            text-align: right;
+            min-height: 220px;
+            border: 14px solid rgba(192, 193, 197, 0.13);
+            padding: 20px;
+            position: relative;
+            margin-bottom: 80px;
        }
        .advantages>div>div>div>h2{
-        text-align: right;
-        color: #5b5da8;
-        font-family: "GothicR";
-        font-size: 24px;
-        text-transform: uppercase;
-        padding:6px 0;
-        display: inline-block;
-        position: relative;
-        margin-bottom: 20px;
+            text-align: right;
+            color: #5b5da8;
+            font-family: "GothicR";
+            font-size: 24px;
+            text-transform: uppercase;
+            padding:6px 0;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 20px;
        }
        .advantages>div>div>div>h2:before{
-        content:"";
-        width:100%;
-        height:6px;
-        left:0;
-        bottom:0;
-        position:absolute;
-        z-index:9;
+            content:"";
+            width:100%;
+            height:6px;
+            left:0;
+            bottom:0;
+            position:absolute;
+            z-index:9;
+        background: -webkit-linear-gradient(left, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+        background: -o-linear-gradient(left, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
         background: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
         }
         .advantages>div>div>div>p{
@@ -636,11 +649,11 @@ hits*/
             color: #5b5da8;
             font-family: "GothicR";
             font-size: 14px;
-            float: left;
+            margin-right: 60px;
         }
         .numberShops{
-            width: 30px;
-            height: 30px;
+            width: 32px;
+            height: 32px;
             border:1px solid #5b5da8;
             border-radius: 50%;
             display: inline-block;
@@ -653,30 +666,50 @@ hits*/
             margin: 0;
             float: left;
         }
+        ::-webkit-input-placeholder {color: #c1c1c1;font-size: 16px; font-family: "Open Sans";}
+            ::-moz-placeholder          {color: #c1c1c1;font-size: 16px; font-family: "Open Sans";}/* Firefox 19+ */
+            :-moz-placeholder           {color: #c1c1c1;font-size: 16px; font-family: "Open Sans";}/* Firefox 18- */
+            :-ms-input-placeholder      {color: #c1c1c1;font-size: 16px; font-family: "Open Sans";}
+            
+            input:focus::-webkit-input-placeholder { color:transparent; }
+            input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+            input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+            input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+            textarea:focus::-webkit-input-placeholder { color:transparent; }
+            textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+            textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+            textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
         .both{
-            float: right;
             width: 79px;
             height: 30px;
             border: 1px solid #ff5fb6;
             background-color: #ff5fb6;
+            margin-left: 20px;
         }
-        
-         @media screen and (min-width:992px){
+         @media screen and (min-width:768px){
        .icon_in_hits>p:before{
             right:5px;
             }
+        .numberShops{
+            margin-left: 0;
         }
-        @media screen and (min-width:992px){
-       .icon_in_hits{
+        label{
+            margin-right: 0;
+            float: left;
+        }
+        .both{
+            float: right;
+        }
+        .icon_in_hits{
             padding-left: 20px;
             padding-right: 20px;
             }
         }
-
-        @media screen and (min-width:992px){
-       .hits{
+        .hits{
             margin-bottom:80px;
             }
+
         }
 /*new*/
         .new-shops{
@@ -703,6 +736,9 @@ hits*/
             background-position: -1px -101px ;
             z-index: -1;
         } 
+        .btn-primary.focus, .btn-primary:focus{
+            outline: none;
+        }
 /*reviews*/
         .reviews{
             background: #c5b3d8;
@@ -739,14 +775,50 @@ hits*/
             font-size: 14px;
             margin-top: 45px;
         }
-        .caruselReviews>.owl-nav>.owl-prev{
+        .caruselReviews>.owl-nav button.owl-prev{
             margin-right: 16px;
-           
+            height: 35px;
+            width: 35px;
+            border: 1px solid #2e6da4;
+            border-radius: 50%;
+            position: relative;
+            margin-right: 36px;
         }
-        .caruselReviews>.owl-nav>.owl-next{
-            margin-left: 16px;
-            transform: rotate(180deg);
-           
+        .caruselReviews>.owl-nav button.owl-prev:before{
+            content: "";
+            position: absolute;
+            top:10px;
+            left: 14px;
+            width: 10px;
+            height: 10px;
+            border-left: 1px solid #2e6da4;
+            border-bottom: 1px solid #2e6da4;
+            transform: rotate(45deg);
+        }
+        .caruselReviews>.owl-nav button.owl-prev:hover{
+            border: 1px solid #333;
+        }
+        .caruselReviews>.owl-nav button.owl-next{
+            margin-right: 16px;
+            height: 35px;
+            width: 35px;
+            border: 1px solid #2e6da4;
+            border-radius: 50%;
+            position: relative;
+        }
+        .caruselReviews>.owl-nav button.owl-next:before{
+            content: "";
+            position: absolute;
+            top:10px;
+            right: 14px;
+            width: 10px;
+            height: 10px;
+            border-right: 1px solid #2e6da4;
+            border-bottom: 1px solid #2e6da4;
+            transform: rotate(-45deg);
+        }
+        .caruselReviews>.owl-nav button.owl-next:hover{
+            border: 1px solid #333;
         }
         .caruselReviews>.owl-nav{
             text-align: center;
@@ -790,6 +862,7 @@ hits*/
             margin-top: 90px;
             margin-bottom: 130px;
         }
+
     }
         .CompanyHeader>h3{
             margin-bottom: 67px;
@@ -830,33 +903,64 @@ hits*/
         .Companylist>.owl-nav>.owl-prev i, .Companylist>.owl-nav>.owl-next i {
             color: white;
         }
-        .Companylist>.owl-nav{
-            text-align: center;
+
+        .Companylist>.owl-nav button.owl-prev{
+            height: 35px;
+            width: 35px;
+            border: 1px solid #2e6da4;
+            border-radius: 50%;
+            position: relative;
+            left: 40%;
+            margin: 20px 30px 0 0;
         }
-        .Companylist>.owl-nav>.owl-prev {
-            margin-right: 16px;
+        .Companylist>.owl-nav button.owl-prev:before{
+            content: "";
+            position: absolute;
+            top:10px;
+            left: 14px;
+            width: 10px;
+            height: 10px;
+            border-left: 1px solid #2e6da4;
+            border-bottom: 1px solid #2e6da4;
+            transform: rotate(45deg);
         }
-        .Companylist>.owl-nav>.owl-next {
-            margin-left: 16px;
-            transform: rotate(180deg);
+        .Companylist>.owl-nav button.owl-prev:hover{
+            border: 1px solid #333;
+        }
+        .Companylist>.owl-nav button.owl-next{
+            height: 35px;
+            width: 35px;
+            border: 1px solid #2e6da4;
+            border-radius: 50%;
+            position: relative;
+            right: -40%;
+        }
+        .Companylist>.owl-nav button.owl-next:before{
+            content: "";
+            position: absolute;
+            top:10px;
+            right: 14px;
+            width: 10px;
+            height: 10px;
+            border-right: 1px solid #2e6da4;
+            border-bottom: 1px solid #2e6da4;
+            transform: rotate(-45deg);
+        }
+        .Companylist>.owl-nav button.owl-next:hover{
+            border: 1px solid #333;
         }
          @media screen and (min-width:992px){
-        .Companylist>.owl-nav>.owl-prev {
+        .Companylist>.owl-nav button.owl-prev {
             position: absolute;
-            top: 50%;
-            margin-top: -10px;
+            top: 42%;
             left: 10%;
             }
-        }
-         @media screen and (min-width:992px){
-        .Companylist>.owl-nav>.owl-next {
+        .Companylist>.owl-nav button.owl-next{
             position: absolute;
-            top: 50%;
-            margin-top: -10px;
+            top: 42%;
             right: 10%;
-            transform: rotate(180deg); 
         }
-    }
+        }
 /*footer*/
         .footer{
             background: #765598;
@@ -878,16 +982,13 @@ hits*/
 
         }
         @media screen and (min-width:992px){
+        .catalogFooter>div>h3>span,.shops>div>h3>span,.contactsFooter>div>h3>span,.soc-sety>div>h3>span {
+            font-size: 18px;
+            }
         .elements_in_footer{
             font-size: 14px;
             }
         }
-        @media screen and (min-width:992px){
-        .catalogFooter>div>h3>span,.shops>div>h3>span,.contactsFooter>div>h3>span,.soc-sety>div>h3>span {
-            font-size: 18px;
-            }
-        }
-        
         .catalogFooter>div>h3>span:before,.shops>div>h3>span:before,.contactsFooter>div>h3>span:before,.soc-sety>div>h3>span:before{
             position: absolute;
             content: "";
